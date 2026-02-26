@@ -45,6 +45,4 @@ Feel free to contribute by **forking the repository**, making improvements, and 
 ## License
 This project is licensed under the **MIT License**.
 
----
-### 🚀 Happy Coding! 🎉
 
