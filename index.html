@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Online Food</title>
+    <title>FreshBite | Premium Online Food & Catering</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/phone.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&family=Merriweather:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="navBar">
         <div id="logo">
-            <img src="logo.png" alt="Logo">
+            <img src="logo.png" alt="FreshBite Logo">
         </div>
 
         <ul>
             <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#menu">Popular Dishes</a></li>
             <li class="item"><a href="#services-container">Services</a></li>
             <li class="item"><a href="#clients-section">Our Clients</a></li>
             <li class="item"><a href="#contact">Contact Us</a></li>
@@ -23,84 +25,141 @@
     </nav>
 
     <section id="home">
-        <h1 class="header1">Welcome To Online Food Shop</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur at impedit iste incidunt! Ex?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, libero</p>
-        <button class="btn">Order Now</button>
+        <h1 class="header1">Welcome To FreshBite Food Shop</h1>
+        <p>Delicious meals prepared with organic ingredients, delivered hot and fresh right to your doorstep. Experience restaurant-quality dining at home.</p>
+        <div class="hero-btns">
+            <a href="#menu" class="btn">Explore Menu</a>
+            <a href="#contact" class="btn btn-secondary">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section id="menu">
+        <h1 class="header1">Popular Dishes</h1>
+        <p class="section-sub">Handcrafted by top chefs with fresh, locally-sourced ingredients</p>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-img-holder pizza"></div>
+                <div class="menu-info">
+                    <h3>Artisanal Italian Pizza</h3>
+                    <p>Wood-fired pizza topped with fresh mozzarella, basil, and signature tomato sauce.</p>
+                    <div class="price-row">
+                        <span class="price">$14.99</span>
+                        <button class="btn-small" onclick="addToCart('Italian Pizza')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-img-holder burger"></div>
+                <div class="menu-info">
+                    <h3>Gourmet Beef Burger</h3>
+                    <p>Juicy Angus beef patty with melted cheddar, crisp lettuce, and secret sauce in a brioche bun.</p>
+                    <div class="price-row">
+                        <span class="price">$11.49</span>
+                        <button class="btn-small" onclick="addToCart('Gourmet Burger')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-img-holder pasta"></div>
+                <div class="menu-info">
+                    <h3>Creamy Alfredo Pasta</h3>
+                    <p>Al dente fettuccine tossed in rich Parmesan cream sauce with grilled chicken breast.</p>
+                    <div class="price-row">
+                        <span class="price">$13.25</span>
+                        <button class="btn-small" onclick="addToCart('Creamy Alfredo Pasta')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="services-container">
         <h1 class="header1">Our Services</h1>
         <div id="services">
             <div class="box">
-                <img src="img/1.png" alt="Image1">
-                <h2 class="header2">Food Ordering</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio labore officiis maxime quasi quisquam quas libero autem, modi sit iste, beatae illo iure a nulla magni doloremque in fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquid aperiam modi aliquam consectetur optio!</p>
+                <div class="icon-box">🚀</div>
+                <h2 class="header2">Express Food Delivery</h2>
+                <p>Lightning-fast delivery guarantee within 30 minutes! Insulated thermal packaging ensures your food stays piping hot during transit.</p>
             </div>
 
             <div class="box">
-                <img src="img/2.png" alt="Image2">
-                <h2 class="header2">Food Catering</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio labore officiis maxime quasi quisquam quas libero autem, modi sit iste, beatae illo iure a nulla magni doloremque in fugiat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eveniet totam corrupti itaque repellendus ex?</p>
+                <div class="icon-box">👨‍🍳</div>
+                <h2 class="header2">Event & Party Catering</h2>
+                <p>Full-service catering customized for weddings, corporate events, and family gatherings with customizable multi-course menus.</p>
             </div>
 
             <div class="box">
-                <img src="img/3.png" alt="Image3">
-                <h2 class="header2">Bulk Ordering</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio labore officiis maxime quasi quisquam quas libero autem, modi sit iste, beatae illo iure a nulla magni doloremque in fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facere minima itaque eligendi nostrum facilis.</p>
+                <div class="icon-box">📦</div>
+                <h2 class="header2">Corporate Bulk Ordering</h2>
+                <p>Streamlined corporate lunch boxes and daily office meal subscriptions with flexible dietary preferences and tiered discount pricing.</p>
             </div>
         </div>
     </section>
 
     <section id="clients-section">
-        <h1 class="header1">Our Clients</h1>
+        <h1 class="header1">Our Trusted Partners</h1>
         <div id="clients">
-            <div class="client-item">
-                <img src="img/logo1.png" alt="Client1">
-            </div>
-            <div class="client-item">
-                <img src="img/logo2.png" alt="Client2">
-            </div>
-            <div class="client-item">
-                <img src="img/logo3.png" alt="Client3">
-            </div>
-            <div class="client-item">
-                <img src="img/logo4.png" alt="Client4">
-            </div>
+            <div class="client-badge">UberEats</div>
+            <div class="client-badge">DoorDash</div>
+            <div class="client-badge">Grubhub</div>
+            <div class="client-badge">Zomato</div>
+            <div class="client-badge">Swiggy</div>
         </div>
     </section>
 
     <section id="contact">
         <h1 class="header1">Contact Us</h1>
         <div id="contact-box">
-            <form>
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
                 <div class="form-group">
                     <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Enter Your Full Name">
+                    <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required>
                 </div>
 
                 <div class="form-group">
                     <label for="phone">Contact: </label>
-                    <input type="tel" name="phone" id="phone" placeholder="Enter Your Contact Number">
+                    <input type="tel" name="phone" id="phone" placeholder="Enter Your Contact Number" required>
                 </div>
 
                 <div class="form-group">
                     <label for="msg">Message: </label>
-                    <textarea name="msg" id="msg" placeholder="Enter Your Message"></textarea>
+                    <textarea name="msg" id="msg" placeholder="Enter Your Message or Special Order Request" required></textarea>
                 </div>
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
+            <div id="formNotice" style="display:none; margin-top: 15px; font-weight: bold; color: #16a34a;">
+                Thank you! Your inquiry has been submitted successfully.
+            </div>
         </div>
     </section>
+
     <footer>
         <p>
-            Copyright &copy; www.onlinefoodshop.com All rights reserved.
+            Copyright &copy; 2026 FreshBite Food Shop. All rights reserved.
         </p>
     </footer>
+
+    <script>
+        function addToCart(itemName) {
+            alert(itemName + ' has been added to your order cart!');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('formNotice').style.display = 'block';
+            document.getElementById('contactForm').reset();
+            setTimeout(() => {
+                document.getElementById('formNotice').style.display = 'none';
+            }, 4000);
+        }
+    </script>
 </body>
 </html>
