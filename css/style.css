@@ -1,0 +1,211 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px 40px;
+    z-index: 1000;
+}
+
+#logo img {
+    height: 55px;
+    width: auto;
+}
+
+#navBar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navBar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+#navBar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Hero Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../bg1.jpg') no-repeat center center/cover;
+    color: white;
+    min-height: 80vh;
+}
+
+.header1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+#home p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border: none;
+    background-color: #e63946;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #c1121f;
+    transform: scale(1.05);
+}
+
+/* Services Section */
+#services-container {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#services .box {
+    background: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#services .box:hover {
+    transform: translateY(-8px);
+}
+
+#services .box img {
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.header2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1d3557;
+}
+
+/* Clients Section */
+#clients-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.client-item img {
+    height: 70px;
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+}
+
+.client-item img:hover {
+    filter: grayscale(0%);
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../contact.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+#contact-box {
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}

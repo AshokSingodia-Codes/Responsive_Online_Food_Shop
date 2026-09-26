@@ -1,0 +1,45 @@
+/* Responsive Adjustments for Mobile and Tablets */
+@media screen and (max-width: 900px) {
+    #navBar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #navBar ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navBar ul li a {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .header1 {
+        font-size: 2.1rem;
+    }
+
+    #home {
+        padding: 80px 15px;
+        min-height: 60vh;
+    }
+
+    #services .box {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #clients {
+        gap: 20px;
+    }
+
+    .client-item img {
+        height: 50px;
+    }
+
+    #contact-box {
+        width: 90%;
+        padding: 20px;
+    }
+}
